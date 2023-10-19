@@ -1,7 +1,7 @@
 import subprocess
 
 # replace 'your_file.exe' with your actual file path
-exe_path = 'your_file.exe'
+exe_path = 'kincaid.exe'
 
 # create a Popen object
 process = subprocess.Popen(exe_path, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
