@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <button onclick="runExe()">Run EXE</button>
+
+    <script>
+        const { exec } = require('child_process');
+
+        function runExe() {
+            exec('C:\\path\\to\\your\\file.exe', (err, stdout, stderr) => {
+                if (err) {
+                    console.error(err);
+                    return;
+                }
+                console.log(stdout);
+            });
+        }
+    </script>
+</body>
+</html>
